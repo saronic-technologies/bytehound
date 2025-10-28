@@ -175,3 +175,32 @@ fn main() {
         writeln!( fp, "];" ).unwrap();
     }).unwrap();
 }
+
+// fn main() {
+//     let src_out_dir: PathBuf = env::var_os( "OUT_DIR" ).expect( "missing OUT_DIR" ).into();
+//     let crate_root: PathBuf = env::var_os( "CARGO_MANIFEST_DIR" ).expect( "missing CARGO_MANIFEST_DIR" ).into();
+//     let target_dir: PathBuf = env::var_os( "CARGO_TARGET_DIR" ).map( |directory| directory.into() ).unwrap_or( crate_root.join( ".." ).join( "target" ) );
+
+//     let _ = std::fs::create_dir_all( &target_dir );
+
+//     let webui_out_dir = crate_root.join("crates/app/static").canonicalize().unwrap();
+
+//     let mut assets: Vec< PathBuf > = Vec::new();
+//     grab_paths( &webui_out_dir, &mut assets );
+//     assert!( !assets.is_empty() );
+
+//     let mut fp = File::create( src_out_dir.join( "webui_assets.rs" ) ).unwrap();
+//     writeln!( fp, "#[cfg(not(test))]" ).unwrap();
+//     writeln!( fp, "static WEBUI_ASSETS: &'static [(&'static str, &'static [u8])] = &[" ).unwrap();
+//     for asset in &assets {
+//         let target_path = asset.canonicalize().unwrap();
+//         let key = target_path.strip_prefix( &webui_out_dir ).unwrap();
+//         writeln!( fp, r#"    ("{}", include_bytes!( "{}" )),"#, key.to_str().unwrap(), target_path.to_str().unwrap() ).unwrap();
+//         println!( "cargo:rerun-if-changed={}", target_path.to_str().unwrap() );
+//     }
+//     writeln!( fp, "];" ).unwrap();
+
+//     writeln!( fp, "#[cfg(test)]" ).unwrap();
+//     writeln!( fp, "static WEBUI_ASSETS: &'static [(&'static str, &'static [u8])] = &[" ).unwrap();
+//     writeln!( fp, "];" ).unwrap();
+// }

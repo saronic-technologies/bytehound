@@ -1,0 +1,6 @@
+{
+  "git+https://github.com/koute/not-perf.git?rev=911723c#nwind@0.1.0": "0qizxmqw7d74gkbvc3qpf8yc3538miyi3r50ic9y1463iv2c443y",
+  "git+https://github.com/koute/not-perf.git?rev=911723c#perf_event_open@0.1.0": "0qizxmqw7d74gkbvc3qpf8yc3538miyi3r50ic9y1463iv2c443y",
+  "git+https://github.com/koute/not-perf.git?rev=911723c#proc-maps@0.1.0": "0qizxmqw7d74gkbvc3qpf8yc3538miyi3r50ic9y1463iv2c443y",
+  "git+https://github.com/koute/not-perf.git?rev=911723c#thread-local-reentrant@0.1.0": "0qizxmqw7d74gkbvc3qpf8yc3538miyi3r50ic9y1463iv2c443y"
+}
