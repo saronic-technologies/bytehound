@@ -1175,6 +1175,11 @@
   resolved "https://registry.yarnpkg.com/@parcel/css-linux-arm64-gnu/-/css-linux-arm64-gnu-1.10.0.tgz#7229d05f1f9f76443eb4c9bc55a9e8887c0822dd"
   integrity sha512-x8XEtJxgJlstAwbg1BLeYuXhUXEOxGg/BeBFPZr8Zk8dNQ1j1jR7LBk12IKgZrvr+Px1WOFY65lwabgCyFqxnQ==
 
+"@parcel/css-linux-arm64-gnu@^1.13.1":
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@parcel/css-linux-arm64-gnu/-/css-linux-arm64-gnu-1.13.1.tgz#fa4c43564b6bfc5434ab779cbef58de7b1228994"
+  integrity sha512-FxnOONVo8WBW58uzjqv/mwSBDgGMp1qxK+fovjqLPCP3zcNgxkUG0l6ElWpqtiWWH3mTMzSHe+7hSaeVov12yQ==
+
 "@parcel/css-linux-arm64-musl@1.10.0":
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/@parcel/css-linux-arm64-musl/-/css-linux-arm64-musl-1.10.0.tgz#d8efb7c09f53971db01ea180a5b63a1b908f1800"
@@ -2279,9 +2284,10 @@ lodash.tonumber@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/lodash.tonumber/-/lodash.tonumber-4.0.3.tgz#0b96b31b35672793eb7f5a63ee791f1b9e9025d9"
 
-lodash@^4.17.10:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+lodash@^4.17.23:
+  version "4.17.23"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.23.tgz#f113b0378386103be4f6893388c73d0bde7f2c5a"
+  integrity sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==
 
 loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   version "1.4.0"
